@@ -10,29 +10,22 @@ import matplotlib.pyplot as plt
 
 df = pd.read_csv('../data/gapminder.tsv', sep='\t')
 
+# # print(df.head())    # 获取前5行
+# # print(df.loc[1])    # 获取第1行的对象
+# # print(df.loc[99])   # 获取第100行的对象
+# # print(df.tail(1))   # 获取最后1行
 
-# print(type(df.columns))
+# # print(df.shape[0])
 
-# print(type(df))
-# print(df.shape)
-# print(df.columns)
-# print(df.dtypes)
-# print(df.info())
+# # qty_of_list = df.shape[0]
+# # print(df.loc[qty_of_list - 1])
 
-# country_df = df['country']
-# print(country_df.head())
-# print(country_df.head(10))
-# print(country_df.tail())
-# print(country_df.tail(10))
+# # print(df['country'].iloc[0: 5])
+# # print(df.loc[1:3, ['country', 'year']])
+# # print(df.iloc[:, list(range(3, 7))])
 
-# subset = df[['country', 'continent', 'year']]
-# print(subset.head())
+# # print(df.iloc[:, 0:6:2])
 
-# subset = df[[1, 2]]
-# print(subset.head())
+# # print(df.iloc[[0, 1, 3], ::])
 
-# global_yearly_life_expectancy = df.groupby('year')['lifeExp'].mean()
-# # print(global_yearly_life_expectancy)
-# global_yearly_life_expectancy.plot()
-# plt.show()
-# print(pd.show_versions(as_json=True))
+# print(df.loc[42, 'year'])
