@@ -1,4 +1,5 @@
 import pandas as pd
+
 gapminder = pd.read_csv('../data/gapminder.tsv', sep='\t')
 
 life_exp = gapminder.groupby(['year'])['lifeExp'].mean()
